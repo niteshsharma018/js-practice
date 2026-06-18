@@ -1,0 +1,39 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: 130px;
+
+        }
+
+        #output {
+            color: rgb(30, 175, 19);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="output">pressed key</h1>
+</body> 
+    <script>
+        let output = document.getElementById("output");
+        
+        document.addEventListener("keydown", (e) => {
+            output.innerHTML = `you pressed: ${e.key} <br> your keycode: ${e.keyCode}`
+        });
+
+
+
+    </script>
+</html>
