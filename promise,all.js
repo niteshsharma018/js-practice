@@ -1,4 +1,3 @@
-
 function task1() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
