@@ -1,0 +1,40 @@
+<!-- 
+      Create a hacking silmulator which has green background and
+      it shows these messages with random delay of 1 to 7 Second
+      
+      Initializing Hacking...
+      Reading your Files...
+      Password files Detected..
+      Sending all passwords and personal files to server..
+      Cleaning up...
+      
+      The three dots must blink so that it looks like a real terminal
+      -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            background: linear-gradient(to right, rgb(57, 157, 57), rgb(149, 14, 14), rgb(216, 198, 41));
+            color: azure;
+            font-family:monospace;
+        }
+        #terminal{
+         padding: 20px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="terminal"></div>
+    <script src="simulator.js"></script>
+</body>
+
+</html>
