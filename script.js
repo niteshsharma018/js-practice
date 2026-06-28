@@ -1,52 +1,22 @@
-// let obj = {
-//     a : 1,
-//     b : "Nitesh"
-// }
+  // document.containor.el
+        // let containor = document.getElementsByTagName("div");
 
-// console.log(obj)
+        // containor.firstElementChild.style.color = "green"
 
-// let animal = {
-//     eats : true
-// };
-// let rabbit = {
-//     jumps : true
-// };
+  
+  function getRandomColor(){
+            let r = Math.floor(Math.random()*256);
+            let g  = Math.floor(Math.random()*256);
+            // let b = Math.floor(Math.random()*256);
+            let b = Math.ceil(Math.random()*256);
 
-// rabbit.__proto__ = animal; // sets rabbit.[[prototype]] = animal
+            return `rgb(${r}, ${g}, ${b})`;
+        }
 
-class Animal{
-    constructor(name){
-        this.name = name
-        console.log("Object is created...")
-    }
+        let boxes = document.querySelectorAll(".box");
 
-    eats(){
-        console.log('Kha raha hoon');
-        
-    }
-
-    jumps(){
-        console.log('Kood raha hoon');
-        
-    }
-}
-
-class Lion extends Animal{
-    constructor(name){
-        super(name)
-        console.log("Object is created and he is a lion...")
-    }
-
-    eats(){
-        super.eats()
-        console.log("Kha raha hoon roor")
-    }
-
-}
-
-
-let a = new Animal("Bunny");
-console.log(a);
-
-let L = new Lion("Shera");
-console.log(b);
+        boxes.forEach(box => {
+            box.style.backgroundColor = getRandomColor();
+            box.style.color = getRandomColor();
+            
+        });
